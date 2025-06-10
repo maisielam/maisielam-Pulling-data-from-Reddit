@@ -36,7 +36,28 @@ Each record in the JSON file represents a Reddit post, including metadata and co
   ]
 }
 ```
+---
 
+## Data Dictionary
+
+The output `.json` file contains a list of post objects. Each post has the following fields:
+
+| Field         | Description                                         |
+|---------------|-----------------------------------------------------|
+| `subreddit`   | Name of the subreddit (e.g., wallstreetbets)       |
+| `post_id`     | Unique ID of the post                              |
+| `title`       | Title of the post                                  |
+| `score`       | Number of upvotes the post received                |
+| `flair`       | Post category (may be `null` if no flair is set)   |
+| `created_utc` | Timestamp when the post was created (ISO format)   |
+| `num_comments`| Total number of comments on the post               |
+| `url`         | URL link to the Reddit post                        |
+| `comments`    | List of top-level comments (each with body, score, created_utc) |
+
+Each comment includes:
+- `comment_body`: Text of the comment  
+- `comment_score`: Number of upvotes on the comment  
+- `comment_created_utc`: Timestamp of when the comment was posted (ISO format)
 ---
 
 ## How to reproduce This Dataset
