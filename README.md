@@ -49,7 +49,7 @@ The output `.json` file contains a list of post objects. Each post has the follo
 | `title`       | Title of the post                                  |
 | `score`       | Number of upvotes the post received                |
 | `flair`       | Post category (may be `null` if no flair is set)   |
-| `created_utc` | Timestamp when the post was created (ISO format)   |
+| `created_utc` | Timestamp when the post was created                |
 | `num_comments`| Total number of comments on the post               |
 | `url`         | URL link to the Reddit post                        |
 | `comments`    | List of top-level comments (each with body, score, created_utc) |
@@ -57,7 +57,7 @@ The output `.json` file contains a list of post objects. Each post has the follo
 Each comment includes:
 - `comment_body`: Text of the comment  
 - `comment_score`: Number of upvotes on the comment  
-- `comment_created_utc`: Timestamp of when the comment was posted (ISO format)
+- `comment_created_utc`: Timestamp of when the comment was posted 
 ---
 
 ## How to reproduce This Dataset
