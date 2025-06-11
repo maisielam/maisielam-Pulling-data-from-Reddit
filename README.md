@@ -80,7 +80,7 @@ REDDIT_CLIENT_SECRET=your_client_secret
 REDDIT_USER_AGENT=your_user_agent
 ```
 
-### Run the Scraper
+### Run the Script
 
 Open the Jupyter notebook `511project(final).ipynb` and run all the cells. This will collect hot posts and their top-level comments from selected subreddits and save the data into a `.json` file.
 
