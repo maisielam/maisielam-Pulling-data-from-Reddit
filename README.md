@@ -85,7 +85,20 @@ REDDIT_USER_AGENT=your_user_agent
 Open the Jupyter notebook `511project(final).ipynb` and run all the cells. This will collect hot posts and their top-level comments from selected subreddits and save the data into a `.json` file.
 
 ---
+### Challenges and Limitations
+Limited Access to Historical Data
+One of the major challenges we faced during this project is Reddit’s restriction on directly accessing historical posts through the PRAW API.
 
+PRAW Limitation: The subreddit.hot() and other similar methods only return current trending posts, not historical data from specific dates.
+
+No Built-in Date Filter: Unlike some APIs, Reddit's PRAW does not support date range filters like from=YYYY-MM-DD to=YYYY-MM-DD.
+
+Impact: This limitation makes it difficult to retrieve past posts from a specific timeframe unless the posts are still accessible in Reddit's active listing (e.g., hot, new, top).
+
+Future Limitation:
+If deeper historical data is required (e.g., posts from years ago), it may be necessary to use third-party datasets or access the Pushshift API, which has better support for historical Reddit data
+
+---
 ## Data Policy
 
 - This dataset is generated from Reddit’s official API in compliance with their [API Terms of Use](https://redditinc.com/policies/data-api-terms).
